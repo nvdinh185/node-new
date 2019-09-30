@@ -7,8 +7,6 @@ app.use((req, res, next) => {
   next();
 });
 
-//app.use(express.static(__dirname + '/www'));
-
 main = (isHttp) => {
 
   app.use('/db', require('./routes/resource'));

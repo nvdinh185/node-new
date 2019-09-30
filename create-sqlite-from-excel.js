@@ -7,8 +7,8 @@
 
 const excel_db = require('./db/sqlite3/excel-sqlite-service');
 
-const excelFilename = "./db/excel/bsongs.xlsx"; //ten file excel cau hinh
-const dbFilename = "./db/database/bsongs.db";     //ten database muon tao
+const excelFilename = "./db/excel/users.xlsx"; //ten file excel cau hinh
+const dbFilename = "./db/database/users.db";     //ten database muon tao
 const fs = require('fs');
 //xoa file csdl cu neu co
 if (fs.existsSync(dbFilename)) {

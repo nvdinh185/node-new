@@ -2,7 +2,7 @@ const db = require('../db/sqlite3/db-pool');
 
 class Handlers {
     getItems(req, res) {
-        db.getRsts("select * from songs")
+        db.getRsts("select * from users")
             .then(results => {
                 res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
                 res.end(JSON.stringify(results
